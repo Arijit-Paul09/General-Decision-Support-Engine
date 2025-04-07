@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Decision Support Engine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    .mb-3 {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container align-items-center section">
+      <div class="title text-light">General Decision Support Engine</div>
+      <div class="d-flex btn-section">
+        <form action="http://localhost:5000/function1" method="POST" class="row align-items-center">
+          <div class="col-auto mb-3">
+            <label for="function1_arg1" class="form-label text-light">Number of Water Stations for Treatment</label>
+            <input type="text" class="form-control" id="function1_arg1" name="arg1" required placeholder="Arg1">
+          </div>
+            <div class="col-auto mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="img-container container p-5 my-5">
+    <h2 class="text-center text-light">Scope of the Project</h2>
+    <div class="d-flex">
+      <img src="{{url_for('static',filename='IMG1.jpeg')}}" alt="Deep Learning Image col-3">
+      <p class="text-left text-light border-left-dashed p-4">
+        The scope of this research paper is to provide a comprehensive analysis of General Decision Support Engines (G+DEs) and their role in supporting decision-making processes. The paper will cover the key components of G+DEs, including ontology-based knowledge representation, the process-type library, and forward completion. Additionally, the paper will explore the various applications of G+DEs in different fields, such as business, healthcare, and the military. The goal of this research is to provide insights into the potential of G+DEs as a tool for improving decision-making processes and to identify areas for future research and development.      </p>
+    </div>
+  </div>
+</body>
+</html>
